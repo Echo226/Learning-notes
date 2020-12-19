@@ -38,7 +38,7 @@ datetime.fromtimestamp(os.stat('os.py').st_mtime). # change timestamp to datetim
 
 # See the entire directory tree
 os.walk()   # A generator yields a tuple with three values as it walks
-for dirpath, dirname, filenames in os.walk('/Users/xting/Desktop/'):
+for dirpath, dirnames, filenames in os.walk('/Users/xting/Desktop/'):
 	print('Current Path: ', dirpath)
 	print('Directories: ', dirnames)
 	print('Files: ', filenames)
